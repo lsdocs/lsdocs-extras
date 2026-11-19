@@ -1,0 +1,20 @@
+[package]
+name = "lsdocs-extras-plugin"
+description = "First-party plugin for content features lsdocs adds of its own (not from docutils or Sphinx): content tabs, in reStructuredText and Markdown alike."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+lsdocs-plugin-sdk.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+lsdocs-parser-markdown.workspace = true
+lsdocs-parser-rst.workspace = true
+tokio = { workspace = true, features = ["macros", "rt"] }
