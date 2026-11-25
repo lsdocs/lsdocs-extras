@@ -16,7 +16,7 @@ async fn build(files: &[(&str, &str)]) -> Vec<Value> {
         let (doc, diagnostics) = if source.ends_with(".rst") {
             lsdocs_parser_rst::parse(source, text, None, &syntax)
         } else {
-            lsdocs_parser_markdown::parse_with_syntax(source, text, &syntax)
+            lsdocs_parser_markdown::myst::parse_with_syntax(source, text, &syntax)
         };
         assert!(diagnostics.is_empty(), "{source}: {diagnostics:?}");
         documents.push(doc);
