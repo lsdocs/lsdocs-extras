@@ -1,7 +1,7 @@
 [package]
 name = "lsdocs-extras-plugin"
 description = "First-party plugin for content features lsdocs adds of its own (not from docutils or Sphinx): content tabs, in reStructuredText and Markdown alike."
-version = "0.1.0"
+version = "0.1.1"
 edition.workspace = true
 rust-version.workspace = true
 license.workspace = true
